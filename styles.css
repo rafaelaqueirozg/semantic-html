@@ -1,0 +1,16 @@
+body {
+  /* background: orange; */
+}
+
+body > ul {
+  list-style: none;
+  padding: 0;
+}
+
+body > ul > li {
+  margin-bottom: 10px;
+}
+
+section {
+  display: flex;
+}
