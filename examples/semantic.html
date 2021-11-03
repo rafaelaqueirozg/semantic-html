@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style/examples.css" />
+    <title>Com semântica</title>
+  </head>
+  <body>
+    <header>
+      <h2>Com semântica</h2>
+
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/examples/not-semantic.html">Outro exemplo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <img
+        src="https://cdn.pixabay.com/photo/2016/02/03/08/34/banner-1176681_960_720.jpg"
+        alt="Descrição imagem"
+      />
+
+      <form>
+        <p>Envie uma mensagem preenchendo o formulário abaixo</p>
+
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="telefone">Telefone</label>
+          <input
+            type="text"
+            id="telefone"
+            name="telefone"
+            placeholder="Digite seu telefone"
+          />
+        </div>
+
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            placeholder="Digite sua mensagem"
+            required
+          ></textarea>
+        </div>
+
+        <div class="field radiobox">
+          <span>Deseja receber nossas novidades?</span>
+
+          <label for="sim">
+            <input type="radio" name="novidades" id="sim" value="sim" checked />
+            Sim
+          </label>
+
+          <label for="nao">
+            <input type="radio" name="novidades" id="nao" value="nao" />
+            Não
+          </label>
+        </div>
+
+        <div class="field checkbox">
+          <label for="scales">
+            <input type="checkbox" id="scales" name="scales" />
+            Li e concordo com os <a href="#"> termos de uso </a> e
+            <a href="#"> política de privacidade </a>
+          </label>
+        </div>
+
+        <div class="action">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
